@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+    <h1>Jquery hide show & toggle method</h1>
+    <!-- <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, excepturi!</p> -->
+
+    <!-- <button id="btn1" class="btn btn-primary">Hide</button>
+     <button id="btn2" class="btn btn-warning">Show</button>
+    <button id="btn3" class="btn btn-danger">Toggle</button> -->
+
+<!-- FADE -->
+    <button id="btn1" class="btn btn-primary">Fade Out</button>
+    <button id="btn2" class="btn btn-warning">fadeIn</button>
+    <button id="btn3" class="btn btn-danger">fadeToggle</button>
+    <button id="btn4" class="btn btn-secondary">fadeTo</button>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('#btn1').click(function(){
+        //         $('h1').hide('1000')
+        //     });
+
+        //     $('#btn2').click(function(){
+        //         $('h1').show('slow')
+        //     });
+
+        //     $('#btn3').click(function(){
+        //         $('h1').toggle('slow')
+        //     });
+        // })
+
+
+
+
+        // FADE
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('h1').fadeOut('1000')
+            });
+
+            $('#btn2').click(function(){
+                $('h1').fadeIn('slow')
+            });
+
+            $('#btn3').click(function(){
+                $('h1').fadeToggle()
+            });
+
+            $('#btn4').click(function(){
+                $('h1').fadeTo('slow', 0.3)
+            });
+        })
+    </script>
+</body>
+</html>
